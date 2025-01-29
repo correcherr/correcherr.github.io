@@ -15,64 +15,70 @@
         <nav>
             <ul class="menu">
                 <li><a href="index.html">/Inicio</a></li>
-                <li><a href="portfolio.html">/Portfolio</a></li>
-                <li><a href="#Curriculum">/Curriculum</a></li>
-                <li><a href="#acerca_de_Mi">/Acerca_de_Mi</a></li>
+                <li><a href="pages/portfolio.html">/Portfolio</a></li>
+                <li><a href="pages/cv.html">/Curriculum</a></li>
+                <li><a href="pages/acerca_de_Mi.html">/Acerca_de_Mi</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Sección Inicio -->
-    <section id="inicio" class="seccion">
-        <h1><span>osclopcor@pagina</span>:~$ cat presentacion.html</h1>
-        <img src="img/yo.webp" alt="">
-        <br>
-        <p>Estoy aprendiendo lenguajes como de programación como Java o C#, también sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </p>
-        <div>
-            <a href="https://github.com/correcherr"><img src="img/github.png" alt="github"></a>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/%C3%B3scar-l%C3%B3pez-correcher-619102274/">
-                <img src="img/linkedin.png" alt="linkedin"></a>
-        </div>
-        <div>
-            <a href="mailto:lopezoscarcorrecher@gmail.com?subject= pregunta sobre la página"><img src="img/mail.png" alt=""></a>
-        </div>
-        <div>
-            <a href="github"><img src="img/github.jpg" alt=""></a>
-        </div>
-    </section>
-
-    <!-- Sección Acerca de Mí -->
-    <section id="acerca_de_Mi" class="seccion">
-        <h2>Acerca de mí</h2>
-        <p>
-            Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y estoy en proceso de aprender a programar y
-            desarrollar aplicaciones para dispositivos móviles y entornos de escritorio. Hasta ahora, he trabajado con lenguajes
-            como Java, además de adquirir conocimientos básicos en desarrollo web con HTML, CSS y JavaScript. También me
-            estoy familiarizando con bases de datos, herramientas como Git y conceptos de sistemas operativos y redes. He
-            trabajado con metodologías ágiles y conozco el funcionamiento. </p>
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="seccion">
+            <h1><span>osclopcor@pagina</span>:~$ cat <span>presentacion.html</span></h1>
+            <img src="img/yo.webp" alt="">
             <br>
-            <p>                       
-            Aunque todavía estoy aprendiendo, me entusiasma explorar más tecnologías y profundizar en áreas como el diseño
-            de interfaces, el desarrollo web y el mantenimiento de sistemas. Estoy motivado por la idea de seguir creciendo y
-            descubriendo cómo crear soluciones útiles e innovadoras en diferentes plataformas.
-        </p>
-    </section>
-    <!-- Sección Currículum -->
-    <section id="Curriculum" class="seccion">
-        <h2>Mi currículum</h2>
-        <p>Aquí podrás encontrar mi currículum en formato PDF o Word.</p>
-        <a href="cv_oscar_lopez.pdf" download="curriculum.pdf">Descargar currículum PDF</a>
-    </section>
+            <p>Estoy aprendiendo lenguajes como de programación como Java o C#, también sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </p>
+            <div>
+                <a href="https://github.com/correcherr"><img src="img/github.png" alt="github"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/%C3%B3scar-l%C3%B3pez-correcher-619102274/">
+                    <img src="img/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div>
+                <a href="mailto:lopezoscarcorrecher@gmail.com?subject= pregunta sobre la página"><img src="img/mail.png" alt=""></a>
+            </div>
+            <div>
+                <a href="github"><img src="img/github.jpg" alt=""></a>
+            </div>
+        </section>
 
+            <!-- Sección Portfolio -->
+            <section id="Portfolio" class="seccion">
+                <h1><span>osclopcor@pagina</span>:~$ ls <span>/Portfolio</span></h1>
+                <p>/Portfolio total 4</p>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="img/among1.png" alt="Imagen 1">
+                        <p>Primer proyecto</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/among2.png" alt="Imagen 2">
+                        <p>Segundo proyecto</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/among3.png" alt="Imagen 3">
+                        <p>Tercer proyecto</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/among4.png" alt="Imagen 4">
+                        <p>Cuarto proyecto</p>
+                    </div>
+                </div>
+            </section>
+                <!-- Footer -->
+        <section id="Curriculum" class="seccion">
+            <h2>Mi currículum</h2>
+            <p>Aquí podrás encontrar mi currículum en formato PDF o Word.</p>
+            <a href="cv_oscar_lopez.pdf" download="curriculum.pdf">Descargar currículum PDF</a>
+        </section>
+    </main>
 
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Juan Pérez</p>
+        <p>&copy; <span id="current-year"></span> Óscar López</p>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
