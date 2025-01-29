@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mi Portafolio</h1>
 
+        <nav>
+            <ul>
+                <li><a href="#Inicio" class="active">Inicio</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Currículum">Currículum</a></li>
+                <li><a href="#Acerca_de_Mí">Acerca de Mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="Inicio" class="seccion">
+        <h1>Bienvenido a mi página personal</h1>
+        <p>Esta es mi página web personal donde podrás encontrar mi portfolio, currículum y un poco sobre mi.</p>
+    </section>
+
+    <!-- Sección Portfolio -->
+    <section id="Portfolio" class="seccion">
+        <h2>Mi portfolio</h2>
+        <p>Aquí podrás encontrar algunos de mis proyectos y trabajos más destacados.</p>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="imagen1.jpg" alt="Imagen 1">
+                <p>Título de la imagen 1</p>
+            </div>
+            <div class="grid-item">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <p>Título de la imagen 2</p>
+            </div>
+            <div class="grid-item">
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <p>Título de la imagen 3</p>
+            </div>
+            <div class="grid-item">
+                <img src="imagen4.jpg" alt="Imagen 4">
+                <p>Título de la imagen 4</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Currículum -->
+    <section id="Currículum" class="seccion">
+        <h2>Mi currículum</h2>
+        <p>Aquí podrás encontrar mi currículum en formato PDF o Word.</p>
+        <a href="curriculum.pdf" download="curriculum.pdf">Descargar currículum PDF</a>
+        <a href="curriculum.docx" download="curriculum.docx">Descargar currículum Word</a>
+    </section>
+
+    <!-- Sección Acerca de Mí -->
+    <section id="Acerca_de_Mí" class="seccion">
+        <h2>Acerca de mí</h2>
+        <p>Puedes encontrar aquí un poco sobre mí, mis intereses y objetivos.</p>
+        <p>Nombre: Juan Pérez</p>
+        <p>Edad: 25</p>
+        <p>Intereses: programación, diseño, música</p>
+        <p>Objetivos: trabajar en una empresa de tecnología como desarrollador</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Juan Pérez</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
