@@ -10,4 +10,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const yearSpan = document.getElementById('current-year');
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
+
+    document.querySelectorAll('.seccion').forEach(section => {
+        section.addEventListener('click', () => {
+            const isExpanded = section.classList.contains('expand');
+            document.querySelectorAll('.seccion').forEach(s => s.classList.remove('expand')); // Remove expand from all sections
+            if (!isExpanded) {
+                section.classList.add('expand'); // Add expand to the clicked section if it was not already expanded
+            }
+        });
+    });
 });

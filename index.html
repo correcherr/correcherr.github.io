@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="back">
     <!-- Header -->
     <header>
         <h1>Óscar López Correcher</h1>
@@ -24,26 +25,41 @@
     <main>
         <!-- Sección Inicio -->
         <section id="inicio" class="seccion">
+
+            <div class="window-buttons">
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+                <span class="button close"></span>
+            </div>
+            
             <h1><span>osclopcor@pagina</span>:~$ cat <span>presentacion.html</span></h1>
-            <img src="img/yo.webp" alt="">
+            <img src="img/yo.webp" class="logo" alt="Foto de Óscar López Correcher">
             <br>
             <p>Estoy aprendiendo lenguajes como de programación como Java o C#, también sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </p>
-            <div>
-                <a href="https://github.com/correcherr"><img src="img/github.png" alt="github"></a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/%C3%B3scar-l%C3%B3pez-correcher-619102274/">
-                    <img src="img/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div>
-                <a href="mailto:lopezoscarcorrecher@gmail.com?subject= pregunta sobre la página"><img src="img/mail.png" alt=""></a>
-            </div>
-            <div>
-                <a href="github"><img src="img/github.jpg" alt=""></a>
-            </div>
+            
+            <div class="redes">
+                <div>
+                    <a href="https://github.com/correcherr"><img src="img/github.png" alt="github" class="logo"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/%C3%B3scar-l%C3%B3pez-correcher-619102274/">
+                        <img src="img/linkedin.png" alt="linkedin" class="logo"></a>
+                </div>
+                <div>
+                    <a href="mailto:lopezoscarcorrecher@gmail.com?subject= pregunta sobre la página"><img src="img/mail.png" class="logo"></a>
+                </div>
+                <div>
+                    <a href="github"><img src="img/github.jpg" class="logo"></a>
+                </div>
+        </div>
         </section>
           <!-- Sección Acerca de Mí -->
         <section id="acerca_de_Mi" class="seccion">
+            <div class="window-buttons">
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+                <span class="button close"></span>
+            </div>
             <h2>Acerca de mí</h2>
             <p>
                 Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y estoy en proceso de aprender a programar y
@@ -58,8 +74,13 @@
                 descubriendo cómo crear soluciones útiles e innovadoras en diferentes plataformas.
             </p>
         </section>
-        <!-- Sección Portfolio -->
+        <!-- Sección Portfolio 
         <section id="Portfolio" class="seccion">
+            <div class="window-buttons">
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+                <span class="button close"></span>
+            </div>
             <h1><span>osclopcor@pagina</span>:~$ ls <span>/Portfolio</span></h1>
             <p>/Portfolio total 4</p>
             <div class="grid">
@@ -81,8 +102,14 @@
                 </div>
             </div>
         </section>
+                        -->
                 <!-- Footer -->
         <section id="Curriculum" class="seccion">
+            <div class="window-buttons">
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+                <span class="button close"></span>
+            </div>
             <h2>Mi currículum</h2>
             <p>Aquí podrás encontrar mi currículum en formato PDF o Word.</p>
             <a href="cv_oscar_lopez.pdf" download="curriculum.pdf">Descargar currículum PDF</a>
@@ -95,5 +122,6 @@
         <p>&copy; <span id="current-year"></span> Óscar López</p>
     </footer>
     <script src="scripts.js"></script>
+</div>
 </body>
 </html>
