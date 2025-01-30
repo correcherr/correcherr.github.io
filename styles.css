@@ -153,7 +153,7 @@ section {
 #inicio .redes div{
     display: inline-block;
     background-color: white;
-    opacity: calc(0.2);
+    opacity: 0.2;
     margin: 20px 5px;
     border-radius: 10px;
     display: inline-flex;               /* Habilita flexbox */
