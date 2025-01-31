@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Personal</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Header -->
     <header>
+        <div id="cabecera">
+        <img src="img/logo_2.png" alt="logo_pag" id="logo_pag">
         <h1>Óscar López Correcher</h1>
-        <span class="menu-toggle">&#9776;</span> 
+        <span class="menu-toggle" id="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+            </svg>
+        </span> 
         <!-- Icono de menú hamburguesa -->
+        </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="#inicio">/Inicio</a></li>
                 <li><a href="#portfolio">/Portfolio</a></li>
                 <li><a href="#acerca_de_Mi">/Acerca_de_Mi</a></li>
@@ -31,8 +39,7 @@
                 <span class="button close"></span>
             </div>
             
-            <h1><span>osclopcor@pagina</span>:~$ cat <span>presentacion.html</span></h1>
-            <img src="img/yo.webp" class="logo" alt="Foto de Óscar López Correcher" id="yo">
+            <h1><span>osclopcor@pagina</span>:~$<span>  cat presentacion.html</span></h1>
             <br>
             <h3>Estoy aprendiendo lenguajes de programación como Java o C#. También sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </h3>
             
@@ -63,8 +70,12 @@
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h1>Acerca de mí</h1>
+            <h1><span>osclopcor@pagina</span>:~$ <span>nano acerca_de_Mi.txt</span></h1>
+            <br>
+            <img src="img/yo_2_2.webp"  alt="Foto de Óscar López Correcher" id="yo">
+
             <h3>
+                
                 Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y estoy en proceso de aprender a programar y
                 desarrollar aplicaciones para dispositivos móviles y entornos de escritorio. Hasta ahora, he trabajado con lenguajes
                 como Java, además de adquirir conocimientos básicos en desarrollo web con HTML, CSS y JavaScript. También me
@@ -84,7 +95,7 @@
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h1><span>osclopcor@pagina</span>:~$ ls <span>/Portfolio</span></h1>
+            <h1><span>osclopcor@pagina</span>:~$  <span>ls /Portfolio</span></h1>
             <p>/Portfolio total 4</p>
             <div class="grid">
                 <div class="grid-item">
@@ -113,13 +124,12 @@
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h1><span>osclopcor@pagina</span>:~$ cd <span>mi_Curriculum.pdf</span></h1>
+            <h1><span>osclopcor@pagina</span>:~$ <span>cd mi_Curriculum.pdf</span></h1>
 
             <div class="trabajado" id="subsection">
-                <a href="https://www.dualred.com/"><img src="img/dualred2.webp" alt="Logo de DUALRED S.L." class="logo" id="dualred"></a>
                 <h2>Experiencia laboral:</h2>
                 <h3>Ayudante de talle en DUALRED S.L.</h3>
-                <h4>2024:</h4>
+                <h3>Durante 2024 en los meses:</h3>
                 <div class="progress-container">
                     <div class="progress-bar">
                         <div class="progress-highlight"></div>
@@ -131,7 +141,6 @@
                 </div>
         </div>
         <div class="idiomas" id="subsection">
-            <a href="https://www.cambridgeenglish.org/es/"><img src="img/cambridge.webp" alt="Logo de Cambridge" class="logo" id="cambridge"></a>
             <h2>Idiomas:</h2>
             <h3>Título Ingles nivel B2  certificado Cambridge</h3>
             <div class="level-container">
@@ -153,7 +162,7 @@
             </div>
         </div>
             
-        <a href="cv_oscar_lopez.pdf" download class="download-btn">Descargar CV</a>
+        <a href="cv_oscarLopez_a.pdf" download class="download-btn">Descargar CV</a>
     </section>
     </main>
 

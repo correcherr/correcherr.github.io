@@ -1,15 +1,10 @@
-// Script para manejar el menú desplegable
-const menuToggle = document.querySelector('.menu-toggle');
-const navUl = document.querySelector('.menu');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
-    navUl.classList.toggle('show'); // Alterna la clase que muestra el menú
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const yearSpan = document.getElementById('current-year');
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
 
     document.querySelectorAll('.seccion').forEach(section => {
         section.addEventListener('click', () => {
