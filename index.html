@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="back">
     <!-- Header -->
     <header>
         <h1>Óscar López Correcher</h1>
@@ -15,10 +14,10 @@
         <!-- Icono de menú hamburguesa -->
         <nav>
             <ul class="menu">
-                <li><a href="index.html">/Inicio</a></li>
-                <li><a href="pages/portfolio.html">/Portfolio</a></li>
-                <li><a href="pages/cv.html">/Curriculum</a></li>
-                <li><a href="pages/acerca_de_Mi.html">/Acerca_de_Mi</a></li>
+                <li><a href="#inicio">/Inicio</a></li>
+                <li><a href="#portfolio">/Portfolio</a></li>
+                <li><a href="#acerca_de_Mi">/Acerca_de_Mi</a></li>
+                <li><a href="#curriculum">/Curriculum</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +32,9 @@
             </div>
             
             <h1><span>osclopcor@pagina</span>:~$ cat <span>presentacion.html</span></h1>
-            <img src="img/yo.webp" class="logo" alt="Foto de Óscar López Correcher">
+            <img src="img/yo.webp" class="logo" alt="Foto de Óscar López Correcher" id="yo">
             <br>
-            <p>Estoy aprendiendo lenguajes como de programación como Java o C#, también sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </p>
+            <h3>Estoy aprendiendo lenguajes de programación como Java o C#. También sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </h3>
             
             <div class="redes">
                 <div>
@@ -48,11 +47,15 @@
                 <div>
                     <a href="mailto:lopezoscarcorrecher@gmail.com?subject= pregunta sobre la página"><img src="img/mail.png" class="logo"></a>
                 </div>
-                <div>
-                    <a href="github"><img src="img/github.jpg" class="logo"></a>
-                </div>
+
         </div>
         </section>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <div id="popup-close"><span class="popup-close-text">Cerrar</span><span class="popup-close">&times;</span></div>
+                <div id="popup-body"></div>
+            </div>
+        </div>
           <!-- Sección Acerca de Mí -->
         <section id="acerca_de_Mi" class="seccion">
             <div class="window-buttons">
@@ -60,22 +63,22 @@
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h2>Acerca de mí</h2>
-            <p>
+            <h1>Acerca de mí</h1>
+            <h3>
                 Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y estoy en proceso de aprender a programar y
                 desarrollar aplicaciones para dispositivos móviles y entornos de escritorio. Hasta ahora, he trabajado con lenguajes
                 como Java, además de adquirir conocimientos básicos en desarrollo web con HTML, CSS y JavaScript. También me
                 estoy familiarizando con bases de datos, herramientas como Git y conceptos de sistemas operativos y redes. He
-                trabajado con metodologías ágiles y conozco el funcionamiento. </p>
+                trabajado con metodologías ágiles y conozco el funcionamiento. </h3>
                 <br>
-                <p>                       
+                <h3>                       
                 Aunque todavía estoy aprendiendo, me entusiasma explorar más tecnologías y profundizar en áreas como el diseño
                 de interfaces, el desarrollo web y el mantenimiento de sistemas. Estoy motivado por la idea de seguir creciendo y
                 descubriendo cómo crear soluciones útiles e innovadoras en diferentes plataformas.
-            </p>
+                </h3>
         </section>
         <!-- Sección Portfolio 
-        <section id="Portfolio" class="seccion">
+        <section id="portfolio" class="seccion">
             <div class="window-buttons">
                 <span class="button minimize"></span>
                 <span class="button maximize"></span>
@@ -104,16 +107,54 @@
         </section>
                         -->
                 <!-- Footer -->
-        <section id="Curriculum" class="seccion">
+        <section id="curriculum" class="seccion">
             <div class="window-buttons">
                 <span class="button minimize"></span>
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h2>Mi currículum</h2>
-            <p>Aquí podrás encontrar mi currículum en formato PDF o Word.</p>
-            <a href="cv_oscar_lopez.pdf" download="curriculum.pdf">Descargar currículum PDF</a>
-        </section>
+            <h1><span>osclopcor@pagina</span>:~$ cd <span>mi_Curriculum.pdf</span></h1>
+
+            <div class="trabajado" id="subsection">
+                <a href="https://www.dualred.com/"><img src="img/dualred2.webp" alt="Logo de DUALRED S.L." class="logo" id="dualred"></a>
+                <h2>Experiencia laboral:</h2>
+                <h3>Ayudante de talle en DUALRED S.L.</h3>
+                <h4>2024:</h4>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-highlight"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span> 
+                        <span>7</span> <span>8</span> <span>9</span> <span>10</span> <span>11</span> <span>12</span>
+                    </div>
+                </div>
+        </div>
+        <div class="idiomas" id="subsection">
+            <a href="https://www.cambridgeenglish.org/es/"><img src="img/cambridge.webp" alt="Logo de Cambridge" class="logo" id="cambridge"></a>
+            <h2>Idiomas:</h2>
+            <h3>Título Ingles nivel B2  certificado Cambridge</h3>
+            <div class="level-container">
+                <div class="level-bar">
+                    <div class="level-highlight"></div>
+                </div>
+                <div class="level-labels">
+                    <span>A1</span> <span>A2</span> <span>B1</span> <span class="active">B2</span> <span>C1</span> <span>C2</span>
+                </div>
+            </div>
+            <h3> Valenciano nivel B2  </h3>
+            <div class="level-container">
+                <div class="level-bar">
+                    <div class="level-highlight"></div>
+                </div>
+                <div class="level-labels">
+                    <span>A1</span> <span>A2</span> <span >B1</span> <span class="active">B2</span> <span>C1</span> <span>C2</span>
+                </div>
+            </div>
+        </div>
+            
+        <a href="cv_oscar_lopez.pdf" download class="download-btn">Descargar CV</a>
+    </section>
     </main>
 
 
@@ -122,6 +163,5 @@
         <p>&copy; <span id="current-year"></span> Óscar López</p>
     </footer>
     <script src="scripts.js"></script>
-</div>
 </body>
 </html>
