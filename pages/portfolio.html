@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Personal</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Portfolio - En Desarrollo</title>
+    <link rel="icon" href="../img/logo_2.png">
+    <link id="stylesheet" rel="stylesheet" href=""> <!-- Hoja de estilos dinámica -->
+
+
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Óscar López Correcher</h1>
-        <span class="menu-toggle">&#9776;</span> 
-        <!-- Icono de menú hamburguesa -->
+        <div id="cabecera">
+            <img src="../img/logo_2.png" alt="logo_pag" id="logo_pag">
+            <h1>Óscar López Correcher</h1>
+            <span class="menu-toggle" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                    <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                </svg>
+            </span> 
+        </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="../index.html">/Inicio</a></li>
-                <li><a href="portfolio.html">/Portfolio</a></li>
-                <li><a href="cv.html">/Currículum</a></li>
-                <li><a href="acerca_de_Mi.html">/Acerca de Mí</a></li>
+                <li><a href="../index.html#acerca_de_Mi">/Acerca_de_Mi</a></li>
+                <li><a href="../index.html#curriculum">/Curriculum</a></li>
+                <li><a href="#">/Portfolio</a></li>
             </ul>
         </nav>
     </header>
-    <main>            
-        <!-- Sección Portfolio -->
-        <section id="Portfolio" class="seccion">
-            <h1><span>osclopcor@pagina</span>:~$ ls <span>/Portfolio</span></h1>
-            <p>/Portfolio total 4</p>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="../img/among1.png" alt="Imagen 1">
-                    <p>Primer proyecto</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../img/among2.png" alt="Imagen 2">
-                    <p>Segundo proyecto</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../img/among3.png" alt="Imagen 3">
-                    <p>Tercer proyecto</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../img/among4.png" alt="Imagen 4">
-                    <p>Cuarto proyecto</p>
-                </div>
+
+    <main>
+        <section id="portfolio" class="seccion">
+            <div class="window-buttons">
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+                <span class="button close"></span>
+            </div>
+            <h1><span>osclopcor@pagina</span>:~$ <span>cat portfolio_status.txt</span></h1>
+            <br>
+            <h3>
+                <strong>¡Página en desarrollo!</strong> 
+                Actualmente estoy trabajando en varios proyectos interesantes que pronto estarán disponibles en este portfolio. 
+                Mientras tanto, puedes revisar mi perfil de <a href="https://github.com/correcherr" style="color: #39FF14;">GitHub</a> 
+                para ver algunos de mis trabajos en desarrollo.
+            </h3>
+            
+            <div class="warning-message">
+                <span class="warning-symbol">⚠️</span>
+                <h1>WARNING: Desarrollo en Progreso</h1>
+                <h3>Esta sección está siendo construida activamente.</h3>
             </div>
         </section>
     </main>
-    <!-- Footer -->
+
     <footer>
-        <p>&copy; 2025 Óscar López</p>
+        <p>&copy; 2024 Óscar López Correcher</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="../scripts/scripts-portfolio.js"></script>
 </body>
 </html>

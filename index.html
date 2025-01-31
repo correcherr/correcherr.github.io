@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correcher's web</title>
-    <link rel="icon" href="img/among1.png">
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="icon" href="img/logo_2.png">
+    <link id="stylesheet" rel="stylesheet" href=""> <!-- Hoja de estilos dinámica -->
 </head>
 <body>
     <!-- Header -->
@@ -24,9 +23,10 @@
         <nav>
             <ul class="menu" id="menu">
                 <li><a href="#inicio">/Inicio</a></li>
-                <li><a href="#portfolio">/Portfolio</a></li>
                 <li><a href="#acerca_de_Mi">/Acerca_de_Mi</a></li>
                 <li><a href="#curriculum">/Curriculum</a></li>
+                <li><a href="pages/portfolio.html">/Portfolio</a></li>
+
             </ul>
         </nav>
     </header>
@@ -40,9 +40,9 @@
                 <span class="button close"></span>
             </div>
             
-            <h1><span>osclopcor@pagina</span>:~$<span>  cat presentacion.html</span></h1>
+            <h1><span>osclopcor@pagina</span>:~$ <span> cat presentacion.html</span></h1>
             <br>
-            <h3>Estoy aprendiendo lenguajes de programación como Java o C#. También sobre creación de páginas web con HTML, CSS y JS. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.  </h3>
+            <h3>Estoy aprendiendo lenguajes de programación como <strong>Java</strong> o <strong>C#</strong>. También sobre creación de páginas web con <strong>HTML, CSS y JS</strong>. Ansioso por aprender nuevos conocimientos, aqui puedes encontrar más información sobre mí y sobre proyectos.</h3>
             
             <div class="redes">
                 <div>
@@ -76,18 +76,18 @@
             <img src="img/yo_2_2.webp"  alt="Foto de Óscar López Correcher" id="yo">
 
             <h3>
-                
-                Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y estoy en proceso de aprender a programar y
+                Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma</strong> y estoy en proceso de aprender a programar y
                 desarrollar aplicaciones para dispositivos móviles y entornos de escritorio. Hasta ahora, he trabajado con lenguajes
-                como Java, además de adquirir conocimientos básicos en desarrollo web con HTML, CSS y JavaScript. También me
-                estoy familiarizando con bases de datos, herramientas como Git y conceptos de sistemas operativos y redes. He
-                trabajado con metodologías ágiles y conozco el funcionamiento. </h3>
-                <br>
-                <h3>                       
-                Aunque todavía estoy aprendiendo, me entusiasma explorar más tecnologías y profundizar en áreas como el diseño
-                de interfaces, el desarrollo web y el mantenimiento de sistemas. Estoy motivado por la idea de seguir creciendo y
+                como <strong>Java</strong> o <strong>C#</strong> , además de adquirir conocimientos básicos en desarrollo web con <strong>HTML, CSS y JavaScript</strong>. También me
+                estoy familiarizando con <strong>bases de datos</strong>, herramientas como <strong>Git</strong> y conceptos de <strong>sistemas operativos y redes</strong>. He
+                trabajado con <strong>metodologías ágiles</strong> y conozco el funcionamiento.
+            </h3>
+            <br>
+            <h3>                       
+                Aunque todavía estoy aprendiendo, me entusiasma explorar más tecnologías y profundizar en áreas como el <strong>diseño
+                de interfaces</strong>, el <strong>desarrollo web</strong> y el <strong>mantenimiento de sistemas</strong>. Estoy motivado por la idea de seguir creciendo y
                 descubriendo cómo crear soluciones útiles e innovadoras en diferentes plataformas.
-                </h3>
+            </h3>
         </section>
         <!-- Sección Portfolio 
         <section id="portfolio" class="seccion">
@@ -125,7 +125,7 @@
                 <span class="button maximize"></span>
                 <span class="button close"></span>
             </div>
-            <h1><span>osclopcor@pagina</span>:~$ <span>cd mi_Curriculum.pdf</span></h1>
+            <h1><span>osclopcor@pagina</span>:~$ <span>tree mi_Curriculum/</span></h1>
 
             <div class="trabajado" id="subsection">
                 <h2>Experiencia laboral:</h2>
@@ -136,8 +136,7 @@
                         <div class="progress-highlight"></div>
                     </div>
                     <div class="progress-labels">
-                        <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span> 
-                        <span>7</span> <span>8</span> <span>9</span> <span>10</span> <span>11</span> <span>12</span>
+                        <span>1</span> <span>2</span> <span class="active">3</span> <span class="active">4</span> <span class="active">5</span> <span class="active">6</span> <span >7</span> <span>8</span> <span>9</span> <span>10</span> <span>11</span> <span>12</span>
                     </div>
                 </div>
         </div>
@@ -172,6 +171,6 @@
     <footer>
         <p>&copy; <span id="current-year"></span> Óscar López</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
