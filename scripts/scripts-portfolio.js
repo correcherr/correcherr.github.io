@@ -22,9 +22,16 @@ window.onload = loadStylesheet;
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
+    const logoLink = document.getElementById('logo_pagLink');
 
     menuToggle.addEventListener('click', function() {
         menu.classList.toggle('show');
+    });
+
+    // Logo link handler - allow default behavior
+    logoLink.addEventListener('click', function(e) {
+        // Allow default navigation
+        window.location.href = '../index.html';
     });
 
     document.querySelectorAll('.seccion').forEach(section => {
@@ -42,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.getAttribute('href').includes('portfolio.html')) {
                 return;
             }
+            
             // Handle internal links
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
@@ -59,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.button.maximize').forEach(button => {
         button.addEventListener('click', function () {
             const sectionContent = this.parentElement.parentElement.cloneNode(true);
-            sectionContent.querySelector('.window-buttons').remove(); // Remove the buttons from the cloned content
+            sectionContent.querySelector('.window-buttons').remove();
             popupBody.innerHTML = '';
             popupBody.appendChild(sectionContent);
             popup.style.display = 'block';
@@ -76,12 +84,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+    // Set current year in footer
+    const yearSpan = document.getElementById('current-year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
 
 function toggleExpand(section) {
     const isExpanded = section.classList.contains('expand');
-    document.querySelectorAll('.seccion').forEach(s => s.classList.remove('expand')); // Remove expand from all sections
+    document.querySelectorAll('.seccion').forEach(s => s.classList.remove('expand'));
     if (!isExpanded) {
-        section.classList.add('expand'); // Add expand to the clicked section if it was not already expanded
+        section.classList.add('expand');
     }
 }
 
@@ -90,7 +102,7 @@ function smoothScroll(target) {
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
-    const duration = 1000; // Duration in milliseconds
+    const duration = 1000;
     let start = null;
 
     window.requestAnimationFrame(step);

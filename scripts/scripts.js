@@ -8,10 +8,10 @@ function loadStylesheet() {
 
     // Cargar la hoja de estilos según el dispositivo
     if (isMobile) {
-        stylesheet.href = "styles/mobile-styles.css"; // Hoja de estilos para móviles
+        stylesheet.href = "../styles/mobile-styles.css"; // Hoja de estilos para móviles
         console.log("Cargando estilos para móviles...");
     } else {
-        stylesheet.href = "styles/styles.css"; // Hoja de estilos para ordenadores
+        stylesheet.href = "../styles/styles.css"; // Hoja de estilos para ordenadores
         console.log("Cargando estilos para ordenadores...");
     }
 }
@@ -22,9 +22,16 @@ window.onload = loadStylesheet;
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
+    const logoLink = document.getElementById('logo_pagLink');
 
     menuToggle.addEventListener('click', function() {
         menu.classList.toggle('show');
+    });
+
+    // Logo link handler - allow default behavior
+    logoLink.addEventListener('click', function(e) {
+        // Allow default navigation
+        window.location.href = 'index.html';
     });
 
     document.querySelectorAll('.seccion').forEach(section => {
@@ -42,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.getAttribute('href').includes('portfolio.html')) {
                 return;
             }
+            
             // Handle internal links
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
@@ -76,6 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+    // Set current year in footer
+    const yearSpan = document.getElementById('current-year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+
 
 function toggleExpand(section) {
     const isExpanded = section.classList.contains('expand');
